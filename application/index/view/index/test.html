@@ -1,0 +1,48 @@
+<!doctype html>
+<html >
+<head>
+<meta charset="utf-8">
+<title>上传</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../../../../public/static/css/two.css">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/1.1.3/weui.min.css">
+
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+ <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<style>
+        #show * {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<bady>
+	<input id="files" type="file" multiple />
+    <div id="show">
+
+    </div>
+     <script>
+        $("#files").on("change", function () {
+            var divShow = $("#show");
+            divShow.empty()
+            for (i = 0; i < this.files.length; i++) {
+                var file = this.files.item(i);
+                var path = window.URL.createObjectURL(file);
+                if (/^image/.test(file.type)) {
+                    divShow.append(
+                        $("<img />").attr("src", path)
+                    );
+                } else if (/^audio/.test(file.type) || /^video/.test(file.type)) {
+                    divShow.append(
+                        '<video controls><source src="' + path + '" type="' + file.type + '" ></video>'
+                    );
+                }
+
+            }
+        })
+    </script>
+</bady>
+</html>

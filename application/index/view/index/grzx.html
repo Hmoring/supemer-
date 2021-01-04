@@ -1,0 +1,229 @@
+<!doctype html>
+<html >
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../../../../public/static/css/two.css">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">   </head>
+<link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/1.1.3/weui.min.css">
+
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+ 
+<script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script>
+        $(function () {
+        $(".dropdown").mouseover(function () {
+            $(this).addClass("open");
+        });
+ 
+        $(".dropdown").mouseleave(function () {
+            $(this).removeClass("open");
+        })
+    })
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+　　$("img").error(function () {
+            $(this).attr("src", "../../../../public/static/img/logo/用户.png");
+        });
+
+ });
+</script>
+</head>
+<body style="min-width: 800px;">
+   <div class="b">
+          <div class="a3">
+              <img src="../../../../public/static/img/logo/logo1.png"alt="">  
+          </div>
+         
+          <ul class="nav justify-content-center  " style="margin-top: -50px;" >
+            <li class="nav-item">
+              <a class="nav-link text-secondary " href="two1.html" >主页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary " href="#">概况</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary " href="#">教育</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="three2.html" >作品</a>
+            </li>
+          </ul>
+            <ul class="nav justify-content-end  " style="margin-right: 15%;margin-top: -40px;">
+            <li class="nav-item ">
+              <a class="nav-link text-secondary " href="sb.html"><i class="fa fa-cloud-upload" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item ">
+              <div class="right">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown" style="margin-top: 8px;">
+                            <a href="#" class="dropdown-toggle"
+                               data-toggle="dropdown"
+                               style="height: 60px">
+                                <img alt="" class="img-circle" src="../../../../public/static/uploads/{$user.img}" onerror="this.src='../../../../public/static/img/logo/用户.png'" width="25px" height="25px" style="border-radius: 50%;" />
+                                <span style="font-size: 13px;color: #666;padding-left: 10px;">
+                                {$user.name}
+                                </span>
+                            </a>
+                            <div class="dropdown-menu pull-right"
+                                 style="background: #FFFFFF;width: 320px;overflow: hidden">
+                                <div style="margin-top: 16px;border-bottom: 1px solid #eeeeee">
+                                    <div style="text-align: center">
+                                        <img class="img-circle" src="../../../../public/static/uploads/{$user.img}"
+                                          onerror="this.src='../../../../public/static/img/logo/用户.png'"   style="width: 38px;height: 38px;border-radius: 50%;"/>
+                                    </div>
+                                    <div style="color: #323534;text-align: center;line-height: 36px;font-size: 15px">
+                                        <span>{$user.name}</span>
+                                    </div>
+                                </div>
+ 
+                                <div class="row" style="margin-left: 15px;margin-right: 15px;margin-top: 10px">
+                                    <div class="col-md-4 text-center grid">
+                                        <i class="fa fa-user" style="font-size: 25px;line-height: 45px;"></i>
+                                        <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                            <a href="#" style="text-decoration:none; color: #666;">个人中心</a></p>
+                                    </div>
+                                    <div class="col-md-4 text-center grid">
+                                        <i class="fa fa-gear" style="font-size: 25px;line-height: 45px;"></i>
+                                        <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                            <a href="#" style="text-decoration:none; color: #666;">账号管理</a></p>
+                                    </div>
+                                    <div class="col-md-4 text-center grid">
+                                        <i class="fa fa-key" style="font-size: 25px;line-height: 45px;"></i>
+                                        <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                           <a href="mmxg.html" style="text-decoration:none; color: #666;">密码修改</a></p>
+                                    </div>
+                                </div>
+ 
+                                <div class="row" style="margin-left: 15px;margin-right: 15px;margin-top: 10px">
+                                    <div class="col-md-4 text-center grid">
+                                        <i class="fa fa-user-circle" style="font-size: 25px;line-height: 45px;"></i>
+                                        <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                            <a href="xg.html" style="text-decoration:none; color: #666;">修改头像</a></p>
+                                    </div>
+                                    <div class="col-md-4 text-center grid">
+                                        <i class="fa fa-comments" style="font-size: 25px;line-height: 45px;"></i>
+                                        <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                            <a href="#" style="text-decoration:none; color: #666;">消息</a></p>
+                                    </div>
+                                    <div class="col-md-4 text-center grid">
+                                        <i class="fa fa-heart-o" style="font-size: 25px;line-height: 45px;"></i>
+                                        <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                            <a href="#" style="text-decoration:none; color: #666;">帮助中心</a></p>
+                                    </div>
+                                </div>
+ 
+ 
+                                <div class="row" style="margin-top: 20px">
+                                    <a href="zx" class="text-center" style="width:200px;margin: auto;text-decoration: none;"><i class="fa fa-sign-out"></i>退出登入界面</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+          </ul>
+       
+          </div>
+      <div class="w">
+      	<video src="../../../../public/static/img/banner.mp4" autoplay muted loop ></video>
+      	<div class="w1">
+      		<div style="margin-top: 16px;">
+                                    <div class="w2">
+                                        <img class="img-circle" src="../../../../public/static/uploads/{$user.img}"
+                                           onerror="this.src='../../../../public/static/img/logo/用户.png'"   style="width: 104px;height: 104px;border-radius: 50%;margin-top: 3px;margin-left: 3px;"/>
+                                    </div>
+                                    <div style="line-height: 36px;font-size: 20px;margin-left: 9%;margin-top: 10px">
+                                        <span>{$user.name}</span>
+                                    </div>
+                                    <div style="color: #aaaaaa;line-height: 36px;font-size: 14px;margin-left: 9%;margin-top: 10px">
+                                        <span>职业：{$user.zy}</span>
+                                    </div>
+                                    <div style="color: #aaaaaa;line-height: 36px;font-size: 14px;margin-left: 9%;margin-top: 10px;border-bottom: 1px solid #aaaaaa;width: 82%;">
+                                        <span>个人简介：{$user.grjj}</span>
+                                    </div>
+                                </div>
+                                <div class="w3">
+                                	创作 动态 圈子 收藏  
+                                </div>
+                                <h4 style="margin-top: 50px;margin-left: 3%;"><span class="badge badge-danger">SDR作品</span> </h4>
+      	</div>
+      	<div class="w4">
+      	     <div class="row">
+      	     	<div class="w5 col-3">
+      	     		
+                    <video src="../../../../public/static/uploads/{$user.video}" style="object-fit: cover;height: 200px;margin-top: 5px;" class="card-img-top" autoplay muted loopalt="...">
+                      </video>
+                   
+                      <h5 class="card-title">标题：{$user.title}</h5>    
+                      <p class="card-text">简介：{$user.text}</p>
+                      <div class="row" style="margin-top: 20px;">
+                                    <a href="" class="text-center btn btn-info" data-toggle="modal" data-target="#exampleModal" style="width:120px;margin: auto;text-decoration: none;">修改</a>
+                                     <a href="" class="text-center btn btn-info" style="width:120px;margin: auto;text-decoration: none;">删除</a>
+                                    </div>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                           <div class="modal-content">
+                                           <div class="modal-header">
+                                            <h5 class="modal-title text-danger" id="exampleModalLabel">标题简介更改</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                         <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                             <div class="modal-body">
+           <form action="grzx_info" enctype="multipart/form-data" method="post">
+               <div class="input-group flex-nowrap" style="width: 80%;margin: auto;margin-top: 20px;">
+                 <div class="input-group-prepend">
+                    <span class="input-group-text" >标题</span>
+                 </div>
+                    <input type="text" class="form-control" placeholder="输入想更改的" id="title"  name="title" value="{$user.title}">
+              </div>
+              <div class="input-group flex-nowrap" style="width: 80%;margin: auto;margin-top: 50px;">
+                 <div class="input-group-prepend">
+                    <span class="input-group-text" >简介</span>
+                     <textarea type="text" class="form-control" style="width: 80%;" aria-label="With textarea" id="text"  name="text" value="{$user.text}"></textarea>
+                </div>
+              </div>
+          
+                                               </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                             <button type="submit" class="btn btn-primary">确定更改</button>
+                                                </div>
+                                            </form>
+                                            </div>
+                                          </div>
+                          </div>
+                 
+                  </div>
+      	     	<div class="w5 col-3">
+      	     		
+      	     	</div>
+      	     	<div class="w5 col-3">
+      	     		
+      	     	</div>
+      	     </div>
+        </div>
+      </div>
+      
+      <div class="d">
+          <div class="d2  text-center">声明</div>
+          <div class="d3 text-center">Superme 所有内容之版权归原作者所有，任何商业用途均须取得授权；未经授权将内容盗取或用作他处，我们将保留追究侵权者法律责任之权利。
+            <p>Superme 鼓励原创，请勿上传任何侵犯他人权利或违反相关法律法规之内容。</p>
+          </div>
+          <div class="bk"></div>
+          <div class="d3 text-center
+          ">© Copyright 2016 Superme 版权所有
+
+           <p> 粤ICP备 06032157 号-2</p>
+          </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
